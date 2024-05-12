@@ -1,0 +1,187 @@
+body
+{
+    margin: 0;
+    position: sticky;
+    bottom: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    background-color: rgb(2, 23, 48);
+    border: 2px solid black;
+    position:absolute;
+    bottom:-70vh !important;
+    /* top: 100; */
+    z-index: -999;
+    margin-top: 10vh;
+}
+
+#footerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    height: 75%;
+    width: 100%;
+}
+
+#brandLogo {
+    height: 90%;
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+#abtBrand #Social {
+    height: 90%;
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#abtBrand h2,
+#social h2 {
+    color: white;
+}
+
+#abtList {
+    font-size: 1.4vw;
+    margin-top: -1%;
+}
+
+#abtList a,
+#abtSocial a {
+    color: rgb(133, 128, 128);
+    text-decoration: none;
+}
+
+#abtList a:hover,
+#abtSocial a:hover {
+    text-decoration: underline;
+    color: rgb(194, 177, 177);
+}
+
+#abtList a:focus,#abtSocial a:focus 
+{
+    color: rgb(59, 56, 56);
+}
+
+.items {
+    line-height: 3vw;
+    list-style: none;
+    /* margin-left: -25%; */
+    /* text-align: center; */
+}
+
+#social {
+    height: 90%;
+    width: 30%;
+}
+
+#abtSocial li {
+
+    text-align: center;
+}
+
+#abtSocial a {
+    font-size: 1.4vw;
+    /* margin-left: 10%; */
+}
+
+#abtSocial p {
+    display: inline;
+    margin-left: 2%;
+}
+
+#line {
+    margin-top: -2%;
+    width: 100%;
+}
+
+#copyright {
+    color: rgb(133, 128, 128);
+    font-size: 1vw;
+    text-align: center;
+}
+
+.footerHeading {
+    font-size: 2vw;
+    text-align: center;
+}
+
+#brandLogo h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+@media(max-width :700px) {
+    #footerBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerHeading {
+        font-size: 2vw;
+        text-align:center;
+    }
+    #abtSocial li {
+
+        text-align: left;
+        line-height: 2vw;
+    }
+    #social
+    {
+        align-items: left;
+    }
+    #abtBrand h2{
+        text-align:left;
+    }
+}
+@media (max-width :500px) 
+{
+    #abtList,#abtSocial
+    {
+        align-items: left;
+        justify-content: left;
+        /* margin-top: -%; */
+    }    
+    .footerHeading {
+        font-size: 2vw;
+        text-align:center;
+        margin-left: 5vw;
+    }
+    #abtBrand h2{
+        text-align:left;
+    }
+    #abtSocial ul
+    {
+        margin-top: -5%
+    };
+}
+.brandImg>img
+{
+    margin-top: 15vh;
+    height: 20vh;
+    width: 40vh;
+}
+
+.textImg>img
+{
+    height: 6vh;
+    width: 16vh;
+    margin-left: 7vh;
+    margin-bottom: 2vh;
+}
+.textImg>img:hover ,.brandImg>img:hover
+{
+    cursor: pointer;
+}

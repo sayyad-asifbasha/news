@@ -1,0 +1,157 @@
+body {
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20vh !important;
+}
+
+.mainItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    /* margin: 1vh; */
+    margin-top: 10vh;
+    /* position: sticky; */
+    /* background-color: black; */
+    /* margin-bottom: 0vh !important; */
+}
+
+.newsItem {
+    display: flex;
+    /* align-items: center; */
+    height: 50vh;
+    width: 150vh;
+    border: 1.5px outset grey;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vh;
+    /* overflow: hidden; */
+    /* justify-content: space-evenly; */
+    column-gap: 4vh;
+    /* transition: all 2s ease-in; */
+}
+
+.newsItem>img {
+    margin-top: 5vh !important;
+    padding: 0;
+    height: 40vh;
+    width: 65vh;
+    margin: 1vh;
+    border-radius: 3vh;
+}
+
+
+.Head {
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    /* transition: font-size 2s ease-in-out; 
+    */
+    
+}
+
+.Head .headLine {
+    font-size: 4.5vh;
+    transition: all 0.5s ease-in;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.cbtn {
+    height: 6vh;
+    width: 18vh;
+    text-align: center;
+    font-size: 3vh;
+    background:transparent;
+    /* background-color: rgb(2, 23, 48); */
+    color:rgb(2, 23, 48);
+    font-weight: 500;
+    border: none;
+    transition: 0.2s ease all;
+}
+
+.cbtn:hover {
+    /* background: transparent; */
+    text-shadow: -2px 2px 20px rgba(99, 98, 98, 0.74);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color:rgb(5, 14, 17);
+    text-decoration-thickness: 0.5px;
+
+}
+.cbtn:disabled {
+    background-color: rgb(116, 121, 121);
+    cursor: not-allowed;
+}
+.move
+{
+    font-size: 8vh;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    padding-top: 5vh;
+    animation: moveArr 1.5s steps(1000) infinite ;
+    position: absolute;
+    display: none;
+    margin-top: -8vh !important;
+}
+@keyframes moveArr {
+    0%
+    {
+        padding-top: -1vh !important;
+        opacity: 0;
+    }
+    25%
+    {
+        padding-top: -1vh;
+        opacity: 0.5;
+    }
+    50%
+    {
+        padding-top: -8vh;
+        opacity: 1;
+    }
+    75%
+    {
+        padding-top: -1vh;
+        opacity: 0.5;
+    }
+    100%
+    {
+        padding-top: 0vh;
+        opacity: 0;
+    }
+    
+}
+.mainContent
+{
+    /* display: none; */
+    opacity: 0;
+    /* visibility:hidden; */
+    transition: all 1s ease-in;
+
+}
+
+.description{
+    font-size: 3vh;
+    font-weight: 545;
+
+}
+.Head:hover .headLine
+{
+    font-size: 4.3vh;
+    margin-top: -2vh;
+}
+.Head:hover .mainContent
+{
+    opacity: 1;
+
+}

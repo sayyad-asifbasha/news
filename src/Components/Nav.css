@@ -1,0 +1,67 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.navi
+{
+    display: flex;
+    background-color: rgb(0,33,71);
+    flex-direction: row;
+    justify-content: space-around ;
+    font-size: large;
+    width: 100%;
+    align-items: center;
+    padding: 1vh;
+    position: fixed;
+    margin-top: -20vh;
+    /* margin-bottom: 2vh; */
+}
+.options
+{
+    /* padding: 0; */
+    align-items: center;
+}
+.logo>img
+{
+    height: 4h;
+    width: 4vh;
+    zoom: 3;
+    border-radius: 20%;
+    /* filter:invert();x */
+    /* object-fit: contain; */
+    /* mix-blend-mode:multiply; */
+    /* background-color: red; */
+    /* margin-left:-25vh; */
+
+}
+.options ul li
+{
+    float: left;
+    list-style: none;
+    font-size: 3.2vh;
+    margin-left: 5vh;
+    margin-top: -3vh;
+    font-weight: 500;
+}
+.options ul li a
+{
+    text-decoration: none;
+    color: white;
+
+}
+.options ul li a:hover
+{
+    
+    /* text-decoration: underline; */
+    /* text-underline-offset: 12px; */
+    color:rgb(161, 147, 147);
+}
+.options ul li a:focus
+{
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    color:rgb(161, 147, 147);
+    text-decoration-thickness:0.4vh;
+    text-decoration-color: red;
+}
